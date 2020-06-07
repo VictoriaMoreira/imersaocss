@@ -1,0 +1,37 @@
+body {
+  background-image: url('https://assets2.ello.co/uploads/user/cover_image/2108103/ello-optimized-601b597c.jpg');
+  background-size: auto 100vh;
+  font-family:  'Roboto Slab', serif;
+  height: 100hv;
+}
+
+.menu {
+  background-color: #ffffff;
+}
+
+.menu li {
+  list-style: none;  
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.site-title,
+.site-subtitle {
+  color: whitesmoke;
+  text-align: center;
+}
+
+.site-subtitle {
+  font-style: italic;
+}
