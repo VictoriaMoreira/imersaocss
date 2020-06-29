@@ -1,12 +1,41 @@
+*{ /*resetando a margim do html*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-image: url('https://assets2.ello.co/uploads/user/cover_image/2108103/ello-optimized-601b597c.jpg');
+  background-image: url('https://1.bp.blogspot.com/-hPTt-K4vL1s/VhswvXNtugI/AAAAAAAAAXo/TluQCvDJyjA/s1600/tumblr_static_background.jpg');
   background-size: auto 100vh;
   font-family:  'Roboto Slab', serif;
   height: 100hv;
 }
 
+/*se a tela tiver pelo menos 400px vai carregar essses estilos, breakpoint*/
+@media (min-width: 400px){
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 600px){
+  body {
+    font-size: 18px;
+  }
+}
+
+header{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .menu {
-  background-color: #ffffff;
+  background-color: #2eb3a1;
+  position: fixed;
+  width: 100vw;
+  top: 0px; /*só funciona com o position declarado no bloco*/
 }
 
 .menu li {
@@ -18,20 +47,36 @@ body {
   justify-content: space-around;
 }
 
+.menu a { /*background é uma função inline e o padding só funciona usando display: block*/
+  display: block;
+  padding: 10px 20px;
+}
+
 a {
+  color: black;
   text-decoration: none;
 }
 
 a:hover {
+  color: white;
   text-decoration: underline;
+  background-color: black;
 }
 
 .site-title,
 .site-subtitle {
-  color: whitesmoke;
+  color: #2eb3a1;
   text-align: center;
+}
+
+.site-title{
+  font-size: 3em;
 }
 
 .site-subtitle {
   font-style: italic;
 }
+ .img-portfolio {
+   height: 75px;
+   width: 75px;
+ }
